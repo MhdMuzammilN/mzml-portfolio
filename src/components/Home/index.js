@@ -9,7 +9,7 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const fNameArray =  ['M', 'o', 'h', 'a', 'm', 'm', 'e', 'd'];
   const mNameArray = ['M', 'u', 'z', 'a', 'm', 'm', 'i', 'l'];
-  const jobArray = ['J', 'r', '.', 'd', 'e', 'v'];
+ 
 
 
   useEffect(() => {
@@ -51,9 +51,9 @@ const Home = () => {
             <span className={`${letterClass} _33`}>N </span>
 
             <br />
-            <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={34} />
+        
           </h1>
-          <h2>MERN Stack Developer</h2>
+          <h2>Mob and Web Dev</h2>
           <Link to="/contact" className="flat-button">
              CONTACT ME
           </Link>
