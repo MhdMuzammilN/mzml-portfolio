@@ -40,9 +40,9 @@ const Skills = () => {
             />
           </h1>
           <p>
-            Let me introduce myself in 7 words. Responsible, creative,
+            Let me introduce myself in 7 words - Responsible, creative,
             open-minded, friendly and ambitious web developer. This is how I see
-            myself an enthusiast who is into``,
+            myself an enthusiast who is into,
             <br />
           </p>
           <ul className="skillSets">
