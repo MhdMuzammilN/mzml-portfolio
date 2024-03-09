@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
-  faCss3,
+  faFigma,
+  faJava,
   faGitAlt,
   faHtml5,
   faJsSquare,
@@ -11,6 +11,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -30,34 +31,62 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
+              strArray={['S', 'k', 'i', 'l', 'l', 's', ' ', '&']}
+              idx={12}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']}
+              idx={12}
             />
           </h1>
+
+          <ul className="projects">
+            <li>Java</li>
+            <li>Dart, Flutter</li>
+
+            <li>JavaScript, React</li>
+            <li>MongoDb, MySQL</li>
+            <li>Figma</li>
+            <li>and many more...</li>
+          </ul>
           <p>
-            I'm very ambitious learner looking for role in an established IT
-            company with the <br />
-            opportunity to work with the latest technologies on challenging and{' '}
-            <br />
-            diverse projects.
-          </p>
-          <p align="LEFT">
-            If i need to define myself in one sentence that would be an
-            enthusiast who is into <br /> Photography, Editing, Movies and
-            tech-obsessed !!{' '}
+            Visit my
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/muzammil06n"
+              className="profile-links"
+            >
+              LinkedIn
+            </a>
+            profile for more details. Also you can checkout my
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/muzammil06n"
+              className="profile-links"
+            >
+              cv
+            </a>
+            on this link, or feel free to connect with me through
+            <Link to="/contact" className="profile-links">
+              contact
+            </Link>
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faFigma} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faJava} color="#28A4D9" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />

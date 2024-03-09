@@ -2,9 +2,18 @@ import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/Mu.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComputer, faEnvelope, faGear, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-
+import {
+  faComputer,
+  faEnvelope,
+  faGear,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 
 import React from 'react'
 
@@ -14,27 +23,27 @@ const Sidebar = () => {
       <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={LogoS} alt="logo"></img>
-          <span className='nameTag'>mzml.exe</span>
+          <span className="nameTag">mzml.exe</span>
         </Link>
 
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           </NavLink>
+
           <NavLink
             exact="true"
             activeclassname="active"
             className="about-link"
-            to="/about"
+            to="/skills"
           >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
           </NavLink>
-          
           <NavLink
             exact="true"
             activeclassname="active"
             className="skills-link"
-            to="/skills"
+            to="/about"
           >
             <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
           </NavLink>

@@ -35,85 +35,61 @@ const Skills = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['S','k', 'i','l','l','s',' ', '&']}
-              idx={12}
-            />
-            <br/>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['E','x', 'p','e','r','i', 'e','n','c', 'e']}
-              idx={12}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              idx={15}
             />
           </h1>
+          <p>
+            Let me introduce myself in 7 words. Responsible, creative,
+            open-minded, friendly and ambitious web developer. This is how I see
+            myself an enthusiast who is into``,
+            <br />
+          </p>
           <ul className="skillSets">
             <li>
               <AnimatedText
                 letterClass={letterClass}
-                strArray={['Java']}
+                strArray={['Mobile and Web Development']}
                 idx={15}
               />
             </li>
             <li>
               <AnimatedText
                 letterClass={letterClass}
-                strArray={['HTML5']}
+                strArray={['Tech-Obsessed']}
                 idx={15}
               />
             </li>
             <li>
               <AnimatedText
                 letterClass={letterClass}
-                strArray={['CSS3']}
+                strArray={['Photography']}
                 idx={15}
               />
             </li>
             <li>
               <AnimatedText
                 letterClass={letterClass}
-                strArray={['Bootstrap']}
+                strArray={['Editing']}
+                idx={15}
+              />
+            </li>
+
+            <li>
+              <AnimatedText
+                letterClass={letterClass}
+                strArray={['Movies']}
                 idx={15}
               />
             </li>
             <li>
               <AnimatedText
                 letterClass={letterClass}
-                strArray={['JavaScript']}
-                idx={15}
-              />
-            </li>
-            <li>
-              <AnimatedText
-                letterClass={letterClass}
-                strArray={['React']}
+                strArray={['Games']}
                 idx={15}
               />
             </li>
           </ul>
-
-          <p>
-            Visit my
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/muzammil06n"
-              className="profile-links"
-            >
-              LinkedIn
-            </a>
-            profile for more details. Also you can checkout my
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/muzammil06n"
-              className="profile-links"
-            >
-              cv
-            </a>
-            on this link, or feel free to connect with me through
-            <Link to="/contact" className="profile-links">
-              contact
-            </Link>
-          </p>
         </div>
         {/* <Logo/> */}
       </div>
